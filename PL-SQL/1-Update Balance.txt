@@ -1,0 +1,12 @@
+
+1. Write a PL/SQL program to display the contents of the above tables and then update the balance of a
+few accounts. 
+
+
+BEGIN
+      UPDATE ACCOUNT
+      SET BALANCE=BALANCE+(BALANCE*0.1)
+      WHERE ssn=1;
+      COMMIT;
+END;
+/
